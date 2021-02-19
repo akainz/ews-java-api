@@ -65,7 +65,7 @@ public final class AttachmentsPropertyDefinition extends
    */
   @Override public boolean hasFlag(PropertyDefinitionFlags flag, ExchangeVersion version) {
     if (version != null
-        && this.getVersion()
+        && version
         .compareTo(ExchangeVersion.Exchange2010_SP2) >= 0) {
       if (AttachmentsPropertyDefinition.Exchange2010SP2PropertyDefinitionFlags
           .contains(flag)) {
